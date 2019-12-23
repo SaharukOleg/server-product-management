@@ -1,0 +1,9 @@
+package com.sha.serverproductmanagement.repository;
+
+import com.sha.serverproductmanagement.model.Product;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProductRepositoty extends JpaRepository<Product, Long> {
+
+
+}
