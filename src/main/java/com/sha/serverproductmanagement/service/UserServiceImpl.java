@@ -40,12 +40,12 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<User> findAllUsers(){
+    public List<User> findAllUsers() {
         return userRepository.findAll();
     }
 
     @Override
-    public Long numberOfUsers(){
+    public Long numberOfUsers() {
         return userRepository.count();
     }
 }
