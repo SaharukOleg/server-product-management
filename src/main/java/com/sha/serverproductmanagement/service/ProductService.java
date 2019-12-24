@@ -12,7 +12,7 @@ public interface ProductService {
 
     void deleteProduct(Long productId);
 
-    Long numberOfProduct();
+    Long numberOfProducts();
 
-    List<Product> findAllProduct();
+    List<Product> findAllProducts();
 }

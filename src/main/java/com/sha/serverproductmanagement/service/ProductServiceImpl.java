@@ -31,12 +31,12 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public Long numberOfProduct() {
+    public Long numberOfProducts() {
         return productRepository.count();
     }
 
     @Override
-    public List<Product> findAllProduct() {
+    public List<Product> findAllProducts() {
         return productRepository.findAll();
     }
 }

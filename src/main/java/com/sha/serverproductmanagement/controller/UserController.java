@@ -14,10 +14,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.servlet.http.HttpServletRequest;
 import java.security.Principal;
 import java.time.LocalDateTime;
-import java.util.List;
 
 @RestController
 public class UserController {
@@ -59,7 +57,7 @@ public class UserController {
 
     @GetMapping("/api/users/products")
     public ResponseEntity<?> getAllProducts() {
-        return new ResponseEntity<>(productService.findAllProduct(), HttpStatus.OK);
+        return new ResponseEntity<>(productService.findAllProducts(), HttpStatus.OK);
 
     }
 
